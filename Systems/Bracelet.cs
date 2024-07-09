@@ -10,6 +10,7 @@ public class Bracelet
     public int Spec { get; set; }
     public int MainStat { get; set; }
     public required Dictionary<string, int> Effects { get; set; }
+    
 
     public void ChangeStat(string statName, int value)
     {
@@ -50,7 +51,7 @@ public class Bracelet
 
     public double GetMod(Stats mod, int mode)
     {
-        var results = Effects.Select(e => BraceletModels.BraceletOptions.Options[e.Key].Modifiers[(Rarity)e.Value]);
+        var results = Effects.Select(e => BraceletOptions.Options[e.Key].Modifiers[(Rarity)e.Value]);
         if (mode == 0)
             return results.Sum();
         else

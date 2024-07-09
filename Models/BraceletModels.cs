@@ -31,7 +31,7 @@ namespace BraceletModels
 
     public static class BraceletOptions
     {
-        public static readonly Dictionary<string, BraceletOption> Options = new Dictionary<string, BraceletOption>
+        public static Dictionary<string, BraceletOption> Options { get; } = new()
         {
             {
                 "Wedge",
