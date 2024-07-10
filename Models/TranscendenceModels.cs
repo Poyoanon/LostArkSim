@@ -12,7 +12,11 @@ public enum GearType
 
 public enum GearTier
 {
-    // Not implemented
+    Relic,
+    Brel_Ancient,
+    Akkan_Ancient,
+    T4_Relic,
+    T4_Ancient
 }
 
 public class TranscendenceModel

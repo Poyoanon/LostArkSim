@@ -12,16 +12,48 @@ namespace BraceletModels
 
     public enum Stats
     {
-        AddDmg,
-        CritDmg,
-        MultDmg,
-        DefRed,
-        CritRate,
+        // AP stats
+        AtkPower,
         WpnPower,
+        MainStat,
+        FlatAP,
+        // Damage related stats
+        AddDmg,
+        MultDmg,
+        SkillDmg,
+        AwkDmg,
+        // Positional specific multipliers
         BackAtkDmg,
         FrontAtkDmg,
-        IdentityGain
+        HeadBackDmg,
+        NonPosDmg,
+        // Crit stats
+        CritRate,
+        CritDmg,
+        MultCDmg,
+        FrontAtkCDmg,
+        BackAtkCDmg,
+        // Casting speed related
+        AtkSpeed,
+        ChargeSpeed,
+        CastSpeed,
+        MoveSpeed,
+        DefRed,
+        // CDR stats
+        CDR1, // legacy from Nightmare 4 Piece, TBD in T4
+        CDR2, // legacy from Nightmare 6 Piece, TBD in T4
+        SkillCDR,
+        AwkCDR,
+        // Conditionals
+        ChargeDmg,
+        CastDmg,
+        // Other
+        Stagger,
+        IdentityGain,
+        APBuff,
+        HealShield
     }
+
 
     public record BraceletOption
     {
@@ -215,6 +247,20 @@ namespace BraceletModels
                     }
                 }
             },
+            {
+                "Enlightenment",
+                new BraceletOption
+                {
+                    Stat = Stats.IdentityGain,
+                    Modifiers = new Dictionary<Rarity, double>
+                    {
+                        { Rarity.Common, 0.03 },
+                        { Rarity.Rare, 0.04 },
+                        { Rarity.Epic, 0.05 },
+                        { Rarity.Legendary, 0.06 }
+                    }
+                }
+            }
         };
     }
 }
