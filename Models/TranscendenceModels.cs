@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class TranscendenceModel
+public class TranscendenceModels
 {
     public static Dictionary<int, int> LvlWeaponBonus { get; } = new()
     {

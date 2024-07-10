@@ -4,8 +4,6 @@ using System.Linq;
 using BraceletModels;
 using LostArkSim.Common;
 
-
-
 public class Bracelet
 {
     public enum BraceletTier

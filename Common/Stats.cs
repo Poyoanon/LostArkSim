@@ -12,6 +12,7 @@ namespace LostArkSim.Common
         MultDmg,
         SkillDmg,
         AwkDmg,
+        EvoDmg,
         // Positional specific multipliers
         BackAtkDmg,
         FrontAtkDmg,
@@ -41,6 +42,8 @@ namespace LostArkSim.Common
         Stagger,
         IdentityGain,
         APBuff,
-        HealShield
+        BrandPower,
+        HealShield,
+        LeapPoints
     }
 }
