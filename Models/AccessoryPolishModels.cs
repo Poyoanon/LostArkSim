@@ -14,7 +14,6 @@ namespace AccessoryPolishModels
     public static class AccessoryRolls
     {
         //Refer to https://lostark.game.onstove.com/Probability/%EC%9E%A5%EC%8B%A0%EA%B5%AC%20%EC%97%B0%EB%A7%88
-        //We don't have the proper %'s, just the lines.
         public static Dictionary<string, AccessoryStats> Rolls { get; } =
             new()
             {
@@ -26,9 +25,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 0.70 },
+                            { Rarity.Epic, 1.60 },
+                            { Rarity.Legendary, 2.60 }
                         }
                     }
                 },
@@ -39,9 +38,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 0.55 },
+                            { Rarity.Epic, 1.20 },
+                            { Rarity.Legendary, 2.00 }
                         }
                     }
                 },
@@ -52,9 +51,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 1.60 },
+                            { Rarity.Epic, 3.60 },
+                            { Rarity.Legendary, 6.00 }
                         }
                     }
                 },
@@ -65,9 +64,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 2.15 },
+                            { Rarity.Epic, 4.80 },
+                            { Rarity.Legendary, 8.00 }
                         }
                     }
                 },
@@ -78,9 +77,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 1300 },
+                            { Rarity.Epic, 3250 },
+                            { Rarity.Legendary, 6500 }
                         }
                     }
                 },
@@ -91,9 +90,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 80 },
+                            { Rarity.Epic, 195 },
+                            { Rarity.Legendary, 390 }
                         }
                     }
                 },
@@ -104,9 +103,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 195 },
+                            { Rarity.Epic, 480 },
+                            { Rarity.Legendary, 960 }
                         }
                     }
                 },
@@ -117,9 +116,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 6 },
+                            { Rarity.Epic, 15 },
+                            { Rarity.Legendary, 30 }
                         }
                     }
                 },
@@ -130,9 +129,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 0.20 },
+                            { Rarity.Epic, 0.50 },
+                            { Rarity.Legendary, 1.00 }
                         }
                     }
                 },
@@ -143,9 +142,9 @@ namespace AccessoryPolishModels
                         LeapPoints = (int)Stats.LeapPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 10 },
+                            { Rarity.Epic, 25 },
+                            { Rarity.Legendary, 50 }
                         }
                     }
                 },
