@@ -1,24 +1,5 @@
 using System.Collections.Generic;
 
-public enum GearType
-{
-    Helmet,
-    Gloves,
-    Shoulder,
-    Chest,
-    Pants,
-    Weapon
-}
-
-public enum GearTier
-{
-    Relic,
-    Brel_Ancient,
-    Akkan_Ancient,
-    T4_Relic,
-    T4_Ancient
-}
-
 public class TranscendenceModel
 {
     public static Dictionary<int, int> LvlWeaponBonus { get; } = new()

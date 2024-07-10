@@ -2,16 +2,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using BraceletModels;
+using LostArkSim.Common;
+
+
 
 public class Bracelet
 {
+    public enum BraceletTier
+    {
+        T3,
+        T4
+    }
     public int Crit { get; set; }
     public int Swift { get; set; }
     public int Spec { get; set; }
     public int MainStat { get; set; }
+    // need to differentiate between T3 and T4 Bracelets to limit effect rarities and Ark Passive; ie T3 cannot have Relic effects and Leap Points
+    public BraceletTier Tier { get; set; }  // T3 Bracelet -> cannot use Relic effects, cannot have LeapPoints; cannot set this to T4 if Char iLvl < 1640
+    public int LeapPoints { get; set; } // setter will set this to 0 automatically if Bracelet.Tier == 0
     public required Dictionary<string, int> Effects { get; set; }
     
-
     public void ChangeStat(string statName, int value)
     {
         switch (statName)
