@@ -20,7 +20,7 @@ namespace AccessoryPolishModels
             {
                 //We need to translate these names from KR. Also, stats from enums should be added but are omitted here.
                 {
-                    "추가 피해 %",
+                    "Additional Damage",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -33,7 +33,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "적에게 주는 피해 %",
+                    "Damage to Enemies",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -46,7 +46,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "세레나데, 신앙, 조화 게이지 획득량 %",
+                    "Support Identity Gauge",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -59,7 +59,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "낙인력 %",
+                    "Brand Power",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -72,7 +72,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "최대 생명력 +",
+                    "Vitality",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -85,7 +85,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "공격력 +",
+                    "Attack Power",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -98,7 +98,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "무기 공격력 +",
+                    "Weapon Power",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -111,7 +111,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "최대 마나 +",
+                    "Mana",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -124,7 +124,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "상태이상 공격 지속시간 %",
+                    "Abnormal Status Attack Duration",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
@@ -137,7 +137,7 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
-                    "전투 중 생명력 회복량 +",
+                    "Health Recovery",
                     new AccessoryStats
                     {
                         LeapPoints = (int)Stats.LeapPoints,
