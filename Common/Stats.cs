@@ -44,6 +44,8 @@ namespace LostArkSim.Common
         APBuff,
         BrandPower,
         HealShield,
-        LeapPoints
+        EvoPoints, //for general Evolution tree
+        EnlightenPoints, //for class-specific Enlightenment tree
+        LeapPoints // t4 bracelet points
     }
 }

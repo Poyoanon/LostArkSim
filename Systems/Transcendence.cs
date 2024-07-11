@@ -32,14 +32,14 @@ public class Transcendence
 
     public int LvlMainStat()
     {
-        return Levels.Values.Select(level => TranscendenceModel.LvlArmorBonus[level]).Sum();
+        return Levels.Values.Select(level => TranscendenceModels.LvlArmorBonus[level]).Sum();
     }
 
     public int LvlWeaponPower()
     {
         return Levels
             .Values.Where(level => level == (int)GearType.Weapon)
-            .Select(level => TranscendenceModel.LvlWeaponBonus[level])
+            .Select(level => TranscendenceModels.LvlWeaponBonus[level])
             .Sum();
     }
 
