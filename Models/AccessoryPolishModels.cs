@@ -78,6 +78,21 @@ namespace AccessoryPolishModels
                     }
                 },
                 {
+                    "Attack Power",
+                    new AccessoryStats
+                    {
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.AtkPower,
+                        EnlightenPoint = Stats.EnlightenPoints,
+                        UniqueRolls = new Dictionary<Rarity, double>
+                        {
+                            { Rarity.Rare, 80 },
+                            { Rarity.Epic, 195 },
+                            { Rarity.Legendary, 390 }
+                        }
+                    }
+                },
+                {
                     "Weapon Power",
                     new AccessoryStats
                     {
