@@ -6,9 +6,9 @@ namespace AccessoryPolishModels
     //FYI, this model is for TIER 4 accessories only.
     public record AccessoryStats
     {
-        public Stats EvoPoint { get; set;} = new Stats();
+        public Stats EnlightenPoint { get; set; } = new Stats();
         public Stats Stat { get; set; } = new Stats();
-        public Accessories Accessory { get; set;} = new Accessories();
+        public Accessories Accessory { get; set; } = new Accessories();
         public required Dictionary<Rarity, double> UniqueRolls { get; set; }
     }
 
@@ -23,7 +23,7 @@ namespace AccessoryPolishModels
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.AddDmg,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 0.70 },
@@ -38,7 +38,7 @@ namespace AccessoryPolishModels
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.MultDmg,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 0.55 },
@@ -53,7 +53,7 @@ namespace AccessoryPolishModels
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.IdentityGain,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 1.60 },
@@ -68,7 +68,7 @@ namespace AccessoryPolishModels
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.BrandPower,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 2.15 },
@@ -77,14 +77,13 @@ namespace AccessoryPolishModels
                         }
                     }
                 },
-
                 {
                     "Attack Power",
                     new AccessoryStats
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.AtkPower,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 80 },
@@ -99,7 +98,7 @@ namespace AccessoryPolishModels
                     {
                         Accessory = Accessories.Necklace,
                         Stat = Stats.WpnPower,
-                        EvoPoint = Stats.EvoPoints,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
                             { Rarity.Rare, 195 },
