@@ -6,29 +6,29 @@ namespace AccessoryPolishModels
     //FYI, this model is for TIER 4 accessories only.
     public record AccessoryStats
     {
-        //Needs to init with Leap Points at the very least, stats should probably be consolidated into one input rather than have the user look through several pages just to find how much main stat they have.
-        public int LeapPoints { get; set; }
+        public Stats EnlightenPoint { get; set; } = new Stats();
+        public Stats Stat { get; set; } = new Stats();
+        public Accessories Accessory { get; set; } = new Accessories();
         public required Dictionary<Rarity, double> UniqueRolls { get; set; }
     }
 
     public static class AccessoryRolls
     {
-        //Refer to https://lostark.game.onstove.com/Probability/%EC%9E%A5%EC%8B%A0%EA%B5%AC%20%EC%97%B0%EB%A7%88
-        //We don't have the proper %'s, just the lines.
         public static Dictionary<string, AccessoryStats> Rolls { get; } =
             new()
             {
-                //We need to translate these names from KR. Also, stats from enums should be added but are omitted here.
                 {
                     "Additional Damage",
                     new AccessoryStats
                     {
-                        LeapPoints = (int)Stats.LeapPoints,
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.AddDmg,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 0.70 },
+                            { Rarity.Epic, 1.60 },
+                            { Rarity.Legendary, 2.60 }
                         }
                     }
                 },
@@ -36,12 +36,14 @@ namespace AccessoryPolishModels
                     "Damage to Enemies",
                     new AccessoryStats
                     {
-                        LeapPoints = (int)Stats.LeapPoints,
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.MultDmg,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 0.55 },
+                            { Rarity.Epic, 1.20 },
+                            { Rarity.Legendary, 2.00 }
                         }
                     }
                 },
@@ -49,12 +51,14 @@ namespace AccessoryPolishModels
                     "Support Identity Gauge",
                     new AccessoryStats
                     {
-                        LeapPoints = (int)Stats.LeapPoints,
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.IdentityGain,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 1.60 },
+                            { Rarity.Epic, 3.60 },
+                            { Rarity.Legendary, 6.00 }
                         }
                     }
                 },
@@ -62,38 +66,14 @@ namespace AccessoryPolishModels
                     "Brand Power",
                     new AccessoryStats
                     {
-                        LeapPoints = (int)Stats.LeapPoints,
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.BrandPower,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
-                        }
-                    }
-                },
-                {
-                    "Vitality",
-                    new AccessoryStats
-                    {
-                        LeapPoints = (int)Stats.LeapPoints,
-                        UniqueRolls = new Dictionary<Rarity, double>
-                        {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
-                        }
-                    }
-                },
-                {
-                    "Attack Power",
-                    new AccessoryStats
-                    {
-                        LeapPoints = (int)Stats.LeapPoints,
-                        UniqueRolls = new Dictionary<Rarity, double>
-                        {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 2.15 },
+                            { Rarity.Epic, 4.80 },
+                            { Rarity.Legendary, 8.00 }
                         }
                     }
                 },
@@ -101,54 +81,17 @@ namespace AccessoryPolishModels
                     "Weapon Power",
                     new AccessoryStats
                     {
-                        LeapPoints = (int)Stats.LeapPoints,
+                        Accessory = Accessories.Necklace,
+                        Stat = Stats.WpnPower,
+                        EnlightenPoint = Stats.EnlightenPoints,
                         UniqueRolls = new Dictionary<Rarity, double>
                         {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
+                            { Rarity.Rare, 195 },
+                            { Rarity.Epic, 480 },
+                            { Rarity.Legendary, 960 }
                         }
                     }
-                },
-                {
-                    "Mana",
-                    new AccessoryStats
-                    {
-                        LeapPoints = (int)Stats.LeapPoints,
-                        UniqueRolls = new Dictionary<Rarity, double>
-                        {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
-                        }
-                    }
-                },
-                {
-                    "Abnormal Status Attack Duration",
-                    new AccessoryStats
-                    {
-                        LeapPoints = (int)Stats.LeapPoints,
-                        UniqueRolls = new Dictionary<Rarity, double>
-                        {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
-                        }
-                    }
-                },
-                {
-                    "Health Recovery",
-                    new AccessoryStats
-                    {
-                        LeapPoints = (int)Stats.LeapPoints,
-                        UniqueRolls = new Dictionary<Rarity, double>
-                        {
-                            { Rarity.Rare, 0 },
-                            { Rarity.Epic, 0 },
-                            { Rarity.Legendary, 0 }
-                        }
-                    }
-                },
+                }
             };
     }
 }
